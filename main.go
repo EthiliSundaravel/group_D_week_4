@@ -23,7 +23,9 @@ func main() {
     switch operation {
     case "1":
         fmt.Printf("total digits in a number %d = %d\n", num, countDigits(num))
-    
+    case "4":
+        fmt.Printf("factorial of a number %d is %d\n", num, factorial(num))
+
     default:
         fmt.Println("Invalid operation! Please choose from 1 to 4")
     }
