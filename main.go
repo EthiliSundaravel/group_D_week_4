@@ -8,7 +8,7 @@ import (
 func main() {
 
 	
-	fmt.Println("Welcome to Group A's Week 4 Project!")
+	fmt.Println("Welcome to Group D's Week 4 Project!")
 	
     var num int
     var operation string
@@ -23,6 +23,9 @@ func main() {
     case "1":
         fmt.Printf("total digits in a number %d = %d\n", num, countDigits(num))
     
+    case "2":
+        fmt.Printf("The number entered is %d and it is a %s\n", num, checkPalindrome(num))
+    
     case "3":
         if isPrimeNumber(num) {
             fmt.Printf("%d is a prime number.\n", num)
@@ -31,7 +34,6 @@ func main() {
         }
     case "4":
         fmt.Printf("factorial of a number %d is %d\n", num, factorial(num))
-
     
     default:
         fmt.Println("Invalid operation! Please choose from 1 to 4")
